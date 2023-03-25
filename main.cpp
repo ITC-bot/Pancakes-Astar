@@ -48,7 +48,6 @@ string generar_caracteres_aleatorios(int n) {
     string pancakes = "";
     unordered_set<char> chars_set;
     srand(time(NULL));
-
     while (chars_set.size() < n) {
         char c = 'a' + rand() % 26;
         if (chars_set.find(c) == chars_set.end()) {
